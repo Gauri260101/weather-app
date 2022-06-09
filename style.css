@@ -1,0 +1,154 @@
+
+body{
+    background-image: url(noaa-kcvlb727mn8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: 0px -200px; */
+    background-attachment: fixed;
+    color: white;
+}
+
+#day-date{
+    font-size: 25px;
+}
+
+#today-weather{
+    margin-top: 0;
+    font-weight: 100;
+    width:230px;
+    background:rgba(24,24,27, 0.5);
+}
+
+p{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+#temp-conditions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    background:rgba(24,24,27, 0.65);
+    position: fixed;
+    bottom: 0px;
+    overflow-x: scroll;
+}
+
+input{
+    height: 40px;
+    border-color:white ;
+    border-right: 0;
+    padding-left: 10px;
+    background-color: rgba(251, 251, 253, 0.3);;
+}
+
+button{
+    height: 40px;
+}
+
+input::placeholder{
+    margin-left: 5px;
+    color: white;
+}
+
+.day{
+    padding-bottom:6px ;
+    padding-top: 6px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    background: rgba(251, 251, 253, 0.3);
+}
+#place{
+    font-size: 25px;
+}
+#long-lat{
+    font-size: 15px;
+    font-weight: 100;
+}
+#today{
+    text-align: center;
+    height: 250px;
+    border-radius: 20px;
+    width: 380px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.item{
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 12px;
+    font-weight: 100;
+    padding-top:15px;
+    text-align: center;
+    border-radius: 20px;
+    height: 210px;
+    width: 165px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.item img{
+    margin-top: 7px;
+}
+
+@media screen and (max-width: 600px){
+    #in{
+        padding-right: 0px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    input{
+        margin-left: 8px;
+        width: 120px;
+    }
+
+    #search{
+        margin-right: 0;
+    }
+
+    #or{  
+        margin: auto;
+    }
+
+    #place{
+        font-size: 18px;
+    }
+    #device{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    #location{
+        text-align: end;
+        width: 160px;
+    }
+    input::placeholder{
+        margin-left: 3px;
+    }
+
+    #long-lat{
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+}
+
+
+@media screen and (max-width: 400px){
+
+    input{
+        margin-left: 8px;
+        width: 120px;
+    }
+
+    #location{
+        text-align: end;
+        width: 150px;
+    }
+
+}
+
